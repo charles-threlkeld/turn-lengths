@@ -1,0 +1,204 @@
+* Data
+|--------------------+-------|
+| Conversation Count |    76 |
+| Turn Count         |  5887 |
+| TCU Count          | 11958 |
+|--------------------+-------|
+* Posterior Parameters
+** Turn Duration
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+rate   0.000  0.000   0.000    0.000        0.0      0.0    6090.0    8024.0    1.0
+shape  0.755  0.012   0.732    0.778        0.0      0.0    5897.0    7574.0    1.0
+Exp
+rate   0.0  0.0     0.0      0.0        0.0      0.0    8114.0   11049.0    1.0
+** Turn Words
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+shape  0.718  0.011   0.696    0.739        0.0      0.0    6386.0    9079.0    1.0
+rate   0.047  0.001   0.045    0.049        0.0      0.0    5912.0    8451.0    1.0
+Exp
+rate  0.065  0.001   0.064    0.067        0.0      0.0    7247.0   11885.0    1.0
+** Turn Syllables
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+shape  0.667  0.011   0.647    0.686        0.0      0.0    6658.0    8430.0    1.0
+rate   0.034  0.001   0.033    0.036        0.0      0.0    6396.0    9009.0    1.0
+Exp
+rate  0.051  0.001    0.05    0.053        0.0      0.0    6702.0   10059.0    1.0
+** TCU Duration
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+rate   0.000  0.000   0.000    0.000        0.0      0.0    5427.0    6569.0    1.0
+shape  1.013  0.012   0.991    1.035        0.0      0.0    5605.0    7004.0    1.0
+Exp
+rate   0.0  0.0     0.0      0.0        0.0      0.0    6867.0   11681.0    1.0
+** TCU Words
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+rate   0.153  0.002   0.149    0.157        0.0      0.0    5458.0    6402.0    1.0
+shape  1.179  0.014   1.152    1.204        0.0      0.0    5563.0    6851.0    1.0
+Exp
+rate  0.13  0.001   0.128    0.132        0.0      0.0    7854.0   12558.0    1.0
+** TCU Syllables
+Gamma
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+shape  1.052  0.012   1.028    1.075        0.0      0.0    5383.0    7178.0    1.0
+rate   0.107  0.002   0.104    0.110        0.0      0.0    5371.0    6930.0    1.0
+Exp
+rate  0.102  0.001     0.1    0.104        0.0      0.0    7922.0   11778.0    1.0
+** TCUs per Turn
+*** Geometric
+               mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+prob_success  0.503  0.005   0.495    0.512        0.0      0.0   15376.0   25197.0    1.0
+*** Neg. Binomial
+               mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+prob_success  0.759  0.011   0.737    0.779      0.000    0.000    6654.0    7095.0    1.0
+num_trials    6.274  0.382   5.571    6.981      0.005    0.003    6635.0    7145.0    1.0
+* Model vs. Data
+** Turn Length
+*** Gamma
+| turn_lengths Data Mean       | 4.83E+03 |
+| turn_lengths Model Mean      | 4.83E+03 |
+| turn_lengths Data Std Dev    | 7.93E+03 |
+| turn_lengths Model Std Dev   | 5.56E+03 |
+| turn_lengths Rate Mean       | 1.56E-04 |
+| turn_lengths Rate Std Dev    | 3.49E-06 |
+| turn_lengths Shape Mean      | 7.55E-01 |
+| turn_lengths Shape Std Dev   | 1.23E-02 |
+*** Exp
+| turn_lengths Data Mean       | 4.83E+03 |
+| turn_lengths Model Mean      | 4.82E+03 |
+| turn_lengths Data Std Dev    | 7.93E+03 |
+| turn_lengths Model Std Dev   | 4.83E+03 |
+| turn_lengths Rate Mean       | 2.07E-04 |
+| turn_lengths Rate Std Dev    | 2.69E-06 |
+** Turn Words
+*** Gamma
+| turn_words Data Mean         | 1.53E+01 |
+| turn_words Model Mean        | 1.53E+01 |
+| turn_words Data Std Dev      | 2.34E+01 |
+| turn_words Model Std Dev     | 1.81E+01 |
+| turn_words Rate Mean         | 4.69E-02 |
+| turn_words Rate Std Dev      | 1.04E-03 |
+| turn_words Shape Mean        | 7.18E-01 |
+| turn_words Shape Std Dev     | 1.14E-02 |
+*** Exp
+| turn_words Data Mean         | 1.53E+01 |
+| turn_words Model Mean        | 1.53E+01 |
+| turn_words Data Std Dev      | 2.34E+01 |
+| turn_words Model Std Dev     | 1.53E+01 |
+| turn_words Rate Mean         | 6.53E-02 |
+| turn_words Rate Std Dev      | 8.55E-04 |
+** Turn Syllables
+*** Gamma
+| turn_syllables Data Mean     | 1.95E+01 |
+| turn_syllables Model Mean    | 1.95E+01 |
+| turn_syllables Data Std Dev  | 3.02E+01 |
+| turn_syllables Model Std Dev | 2.39E+01 |
+| turn_syllables Rate Mean     | 3.42E-02 |
+| turn_syllables Rate Std Dev  | 7.73E-04 |
+| turn_syllables Shape Mean    | 6.67E-01 |
+| turn_syllables Shape Std Dev | 1.05E-02 |
+*** Exp
+| turn_syllables Data Mean     | 1.95E+01 |
+| turn_syllables Model Mean    | 1.95E+01 |
+| turn_syllables Data Std Dev  | 3.02E+01 |
+| turn_syllables Model Std Dev | 1.95E+01 |
+| turn_syllables Rate Mean     | 5.13E-02 |
+| turn_syllables Rate Std Dev  | 6.72E-04 |
+
+** TCU Length
+*** Gamma
+| tcu_lengths Data Mean     |	2.40E+03 |
+| tcu_lengths Model Mean    |	2.40E+03 |
+| tcu_lengths Data Std Dev  |	3.36E+03 |
+| tcu_lengths Model Std Dev |	2.39E+03 |
+| tcu_lengths Rate Mean     |	4.22E-04 |
+| tcu_lengths Rate Std Dev  |	6.27E-06 |
+| tcu_lengths Shape Mean    |	1.01E+00 |
+| tcu_lengths Shape Std Dev |	1.17E-02 |
+*** Exponential
+| tcu_lengths Data Mean     |	2.40E+03 |
+| tcu_lengths Model Mean    |	2.40E+03 |
+| tcu_lengths Data Std Dev  |	3.36E+03 |
+| tcu_lengths Model Std Dev |	2.40E+03 |
+| tcu_lengths Rate Mean     |	4.16E-04 |
+| tcu_lengths Rate Std Dev  |	3.79E-06 |
+** TCU Words
+*** Gamma
+| tcu_words Data Mean     |	7.70E+00 |
+| tcu_words Model Mean    |	7.70E+00 |
+| tcu_words Data Std Dev  |	7.62E+00 |
+| tcu_words Model Std Dev |	7.10E+00 |
+| tcu_words Rate Mean     |	1.53E-01 |
+| tcu_words Rate Std Dev  |	2.23E-03 |
+| tcu_words Shape Mean    |	1.18E+00 |
+| tcu_words Shape Std Dev |	1.38E-02 |
+*** Exponential
+| tcu_words Data Mean     |	7.70E+00 |
+| tcu_words Model Mean    |	7.70E+00 |
+| tcu_words Data Std Dev  |	7.62E+00 |
+| tcu_words Model Std Dev |	7.70E+00 |
+| tcu_words Rate Mean     |	1.30E-01 |
+| tcu_words Rate Std Dev  |	1.20E-03 |
+** TCU Syllables
+*** Gamma
+| tcu_syllables Data Mean     |	9.81E+00 |
+| tcu_syllables Model Mean    |	9.80E+00 |
+| tcu_syllables Data Std Dev  |	1.01E+01 |
+| tcu_syllables Model Std Dev |	9.56E+00 |
+| tcu_syllables Rate Mean     |	1.07E-01 |
+| tcu_syllables Rate Std Dev  |	1.57E-03 |
+| tcu_syllables Shape Mean    |	1.05E+00 |
+| tcu_syllables Shape Std Dev |	1.21E-02 |
+*** Exponential
+| tcu_syllables Data Mean     |	9.81E+00 |
+| tcu_syllables Model Mean    |	9.80E+00 |
+| tcu_syllables Data Std Dev  |	1.01E+01 |
+| tcu_syllables Model Std Dev |	9.80E+00 |
+| tcu_syllables Rate Mean     |	1.02E-01 |
+| tcu_syllables Rate Std Dev  |	9.44E-04 |
+** TCUs Per Turn
+| TCUs per Turn Data Mean                  | 1.99E+00 |
+| TCUs per Turn Geometric Model Mean       | 1.99E+00 |
+| TCUs per Turn Neg Binomial Model Mean    | 1.99E+00 |
+| TCUs per Turn Data Std Dev               | 1.90E+00 |
+| TCUs per Turn Geometric Model Std Dev    | 1.40E+00 |
+| TCUs per Turn Neg Binomial Model Std Dev | 1.62E+00 |
+| TCUs per Turn Geometric p Mean           | 5.03E-01 |
+| TCUs per Turn Neg Binomial p Mean        | 7.59E-01 |
+| TCUs per Turn Geometric p Std Dev        | 4.61E-03 |
+| TCUs per Turn Neg Binomial p Std Dev     | 1.12E-02 |
+| TCUs per Turn Neg Binomial n Std Dev     | 6.27E+00 |
+| TCUs per Turn Neg Binomial n Std Dev     | 3.82E-01 |
+* Model Comparison
+** Turn Lengths
+             rank           waic    p_waic  ...        dse  warning  waic_scale
+Gamma           0  111301.348689  3.303844  ...   0.000000    False    deviance
+Exponential     1  111640.838462  2.670428  ...  43.590011    False    deviance
+** Turn Words
+             rank          waic    p_waic  ...        dse  warning  waic_scale
+Gamma           0  43414.020714  2.461405  ...   0.000000    False    deviance
+Exponential     1  43904.366768  2.352248  ...  43.111341    False    deviance
+** Turn Syllables
+             rank          waic    p_waic  ...        dse  warning  waic_scale
+Gamma           0  45999.175902  2.325269  ...   0.000000    False    deviance
+Exponential     1  46756.375436  2.423916  ...  53.238281    False    deviance
+** TCU Lengths
+             rank           waic    p_waic  ...      dse  warning  waic_scale
+Exponential     0  210098.756378  1.944546  ...  0.00000    False    deviance
+Gamma           1  210100.133362  3.593699  ...  3.19596     True    deviance
+** TCU Words
+             rank          waic    p_waic  ...        dse  warning  waic_scale
+Gamma           0  72553.752502  1.772040  ...   0.000000    False    deviance
+Exponential     1  72746.075206  0.998325  ...  20.095041    False    deviance
+** TCU Syllables
+             rank          waic    p_waic  ...       dse  warning  waic_scale
+Gamma           0  78499.868591  1.740435  ...  0.000000    False    deviance
+Exponential     1  78517.571757  1.094255  ...  6.592523    False    deviance
+** TCUs per Turn
+                  rank          waic    p_waic  ...       dse  warning  waic_scale
+Geometric            0  16209.397714  1.825597  ...   0.00000    False    deviance
+NegativeBinomial     1  20315.258775  5.401191  ...  75.59753     True    deviance
+

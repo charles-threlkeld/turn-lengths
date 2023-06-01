@@ -1,0 +1,49 @@
+|                    |  $BF_{01}$ |   $BF{10}$ |
+|--------------------+------------+------------|
+| Turn ms            |  3.470e-73 |  2.881e+72 |
+| Turn ms > 1 word   |  6.877e-75 |  1.453e+74 |
+| Turn ms > 2 words  |  9.256e-89 |  1.080e+88 |
+| Turn syllables     | 8.065e-164 | 1.240e+163 |
+| Turn syllables > 1 | 1.061e-132 | 9.417e+131 |
+| Turn syllables > 2 |  6.217e-12 |  1.608e+11 |
+| Turn syllables > 3 |   1.554e-3 |   6.434e+2 |
+| Turn words         | 8.148e-106 | 1.226e+105 |
+| Turn words > 1     |  1.762e-88 |  5.677e+87 |
+| Turn words > 2     |   2.248e-4 |   4.447e+3 |
+|--------------------+------------+------------|
+| TCU ms             |   3.320e+1 |   3.013e-2 |
+| TCU ms > 1 word    |  1.504e-66 |  6.649e+65 |
+| TCU ms > 2 words   | 3.288e-297 | 3.041e+296 |
+| TCU syllables      |   2.291e-3 |   4.364e+2 |
+| TCU syllables > 1  |  1.138e-14 |  8.779e+13 |
+| TCU syllables > 2  | 2.862e-113 | 3.493e+112 |
+| TCU syllables > 3  | 3.586e-112 | 2.788e+111 |
+| TCU words          |  2.946e-41 |  3.393e+40 |
+| TCU words > 1      |  2.236e-55 |  4.471e+54 |
+| TCU words > 2      | 1.201e-157 | 8.323e+156 |
+
+
+|                    | Gamma WAIC | Exponential WAIC |
+|--------------------+------------+------------------|
+| Turn ms            |     111301 |           111640 |
+| Turn ms > 1 word   |      94989 |            95336 |
+| Turn ms > 2 words  |      75629 |            76039 |
+| Turn syllables     |      45999 |            46756 |
+| Turn syllables > 1 |      41547 |            41691 |
+| Turn syllables > 2 |      34334 |            34390 |
+| Turn syllables > 3 |      32066 |            32083 |
+| Turn words         |      43413 |            43904 |
+| Turn words > 1     |      37758 |            38168 |
+| Turn words > 2     |      31448 |            31469 |
+|--------------------+------------+------------------|
+| TCU ms             |     210100 |           210098 |
+| TCU ms > 1 word    |     176097 |           176405 |
+| TCU ms > 2 words   |     145107 |           146478 |
+| TCU syllables      |      78499 |            78517 |
+| TCU syllables > 1  |      67261 |            67330 |
+| TCU syllables > 2  |      56746 |            57270 |
+| TCU syllables > 3  |      52164 |            52683 |
+| TCU words          |      72553 |            72746 |
+| TCU words > 1      |      60771 |            61028 |
+| TCU words > 2      |      50246 |            50975 |
+
